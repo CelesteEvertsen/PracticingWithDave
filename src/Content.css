@@ -1,0 +1,76 @@
+main{
+margin: 0 2em;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+justify-content: flex-start;
+
+}
+ body {
+ box-sizing: border-box;
+ margin: 0 auto;
+} 
+
+h1 {
+  margin: 0;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+ul{
+  width: 100%;
+list-style: none;
+padding: 0 0.25em 0.25em;
+}
+ ul li::before{
+  content: "\200B";
+ }
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0 0.5em 0.5em;
+  margin: 0.25rem 0;
+  background-color: #eee;
+  width: 100%;
+
+}
+.item input[type="checkbox"]{
+  text-align: center;
+  width: 2.5rem;
+  width: 45px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label{
+text-decoration: underline;
+
+}
+
+.item > label{
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+.item svg{
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+.item svg:focus,
+.item svg:hover{
+color: red;
+outline: none;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  height: 4em;
+}
