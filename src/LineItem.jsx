@@ -18,6 +18,7 @@ export default function LineItem({item, handelChecked, handelDelete}){
             role="button"
             onClick={() => handelDelete(item.id)}
             tabIndex="0"
+            aria-label={`Delete ${item.item}`}
           />
         </li>
         </>
